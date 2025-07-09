@@ -1,0 +1,15 @@
+create database sam;
+use sam;
+create table student(Rollno int, Name varchar(20), Contact bigint);
+select * from student;
+alter table student add Marks int;
+insert into student values(1,'Sri',8675948320,80),(2,'Bala',9361157638,80);
+update student set marks=85 where rollno=1;
+delete from student where rollno=1;
+insert into student values(3,'Hari',9584594933,80),(4,'Gopi',9863452790,80);
+alter table student add address varchar(30);
+alter table student modify contact varchar(20);
+alter table student change contact phno bigint;
+alter table student drop column address;
+rename table student to stu;
+select * from stu;
